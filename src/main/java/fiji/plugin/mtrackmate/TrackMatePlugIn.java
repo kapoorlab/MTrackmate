@@ -90,7 +90,7 @@ public class TrackMatePlugIn implements PlugIn
 		 displayer.render();
 		// Wizard.
 		 sequence = createSequence( mtrackmate, selectionModel, displaySettings );
-		frame = sequence.run( "BTrackMate");
+		frame = sequence.run( "MTrackMate");
 		frame.setIconImage( TRACKMATE_ICON.getImage() );
 		GuiUtils.positionWindow( frame, imp.getWindow() );
 		frame.setVisible( true );
@@ -159,7 +159,7 @@ public class TrackMatePlugIn implements PlugIn
 		 
         TrackMate updatedmtrackmate = new TrackMate(model, settings);
         final WizardSequence sequence = PseudocreateSequence( updatedmtrackmate,  new SelectionModel( model ), PseudocreateDisplaySettings());
-        sequence.run( "BTrackMate");
+        sequence.run( "MTrackMate");
         
 		
 	}
